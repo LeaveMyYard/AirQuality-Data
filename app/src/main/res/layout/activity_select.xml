@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="-60dp"
+        app:srcCompat="@drawable/iq_air_logo"
+        tools:srcCompat="@drawable/iq_air_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp">
+
+        <TextView
+            android:id="@+id/CountryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant"
+            android:text="Select Country:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/Country"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/StateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/assistant"
+            android:text="Select State:"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/State"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/CityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/assistant"
+            android:text="Select City:"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/GoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/assistant"
+            android:onClick="onButtonClick"
+            android:text="Serch Data"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ErrorText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/assistant"
+        android:gravity="bottom|fill_horizontal"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#B40202"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+</LinearLayout>
